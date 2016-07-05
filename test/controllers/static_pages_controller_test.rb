@@ -7,17 +7,17 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get home" do
-    get static_pages_home_url
+    get home_url
     assert_response :success
   end
 
   test "should get help" do
-    get static_pages_help_url
+    get help_url
     assert_response :success
   end
 
   test "should get contact" do
-    get static_pages_contact_url
+    get contact_url
     assert_response :success
     assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
   end
